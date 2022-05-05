@@ -1,4 +1,4 @@
-public class No1 {
+public class No704BinarySearch {
 
         public static int search(int[] nums, int target) {
              int start = 0;
