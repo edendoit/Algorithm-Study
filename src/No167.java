@@ -8,9 +8,9 @@ public class No167 {
     public int[] twoSum(int[] numbers, int target) {
 
         int start = 0, end = (numbers.length-1);
-        int[] seq = new int[2];
+
         if(numbers == null || numbers.length < 2) {
-            return seq;
+            return new int[]{};
         }
         while(start < end) {
             if(numbers[start] + numbers[end] == target) {
