@@ -18,7 +18,6 @@ public class No34 {
 
                 } else {
                     start++;
-
                 }
             }
         }
