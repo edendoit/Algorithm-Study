@@ -11,21 +11,21 @@ public class No844 {
             if(s.charAt(i)=='#') {
                 if(!fakeS.isEmpty())
                     fakeS.pop();
-                System.out.println("s 한번 왔다감");
+
             } else {
                 fakeS.push(s.charAt(i));
             }
-            System.out.println("s = "+s.charAt(i));
+
             i++;
         } while(j<t.length()) {
             if(t.charAt(j)=='#') {
                 if(!fakeT.isEmpty())
-                fakeT.pop();
-                System.out.println("t 한번 왔다감");
+                    fakeT.pop();
+
             } else {
                 fakeT.push(t.charAt(j));
             }
-            System.out.println("t = "+t.charAt(j));
+
             j++;
         }
         if(fakeS.equals(fakeT)) return true;
