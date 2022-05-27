@@ -15,6 +15,5 @@ public class No153 {
         }
         return nums[start];
 
-
     }
 }
