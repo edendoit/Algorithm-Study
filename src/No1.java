@@ -1,28 +1,22 @@
 public class No1 {
+    public int[] twoSum(int[] nums, int target) {
+        int [] result = new int[2];
+        int i=0, j=1;
 
-    // 704 Binary Search
-        public static int search(int[] nums, int target) {
-             int start = 0;
-             int end = nums.length - 1;
+        while(i < (nums.length-1)) {
+            if(j < nums.length) {
+                if((nums[i] + nums[j]) == target) {
+                    return new int[]{i, j};
+                } else {
+                    j++;
+                }
+            }else {
 
-             while(start <= end) {
-                 int mid = (start + end) / 2;
-
-                 if(target == nums[mid]) {
-                     return mid;
-                 }
-                 if(target > nums[mid]) {
-                     start = mid+1;
-                 } else {
-                     end = mid-1;
-                 }
-             }
-             return -1;
+                i++;
+                j = (i+1);
+            }
         }
-
-        public static void main(String[] args) {
-
-            System.out.println(search(new int[]{-1, 0, 3, 5, 9, 12},9));
-        }
+        return new int[]{};
+    }
 
 }
