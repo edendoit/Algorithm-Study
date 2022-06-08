@@ -1,6 +1,6 @@
 public class No1 {
     public int[] twoSum(int[] nums, int target) {
-        int [] result = new int[2];
+       
         int i=0, j=1;
 
         while(i < (nums.length-1)) {
