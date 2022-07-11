@@ -27,3 +27,5 @@ public class No695 {
         return count;
     }
 }
+
+// https://www.youtube.com/watch?v=W8VuDt0eb5c
