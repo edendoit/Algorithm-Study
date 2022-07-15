@@ -19,3 +19,4 @@ public class No559 {
     //    return depth;
     //}
 }
+// https://leetcode.com/problems/maximum-depth-of-n-ary-tree/discuss/183060/Java-BFS-Iterative-Solution
