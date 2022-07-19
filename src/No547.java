@@ -21,3 +21,5 @@ public class No547 {
         }
     }
 }
+
+// https://leetcode.com/problems/number-of-provinces/discuss/101338/Neat-DFS-java-solution
