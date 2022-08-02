@@ -4,23 +4,33 @@ import java.util.List;
 
 public class No47 {
     public List<List<Integer>> permuteUnique(int[] nums) {
+        List<List<Integer>> res = new ArrayList();
+        boolean[] visited = new boolean[nums.length];
         Arrays.sort(nums);
-        List<List<Integer>> result = new ArrayList();
+        permutation(nums, visited, res, new ArrayList());
 
-        int begin = 0;
-        for(int i=0; i<nums.length; i++) {
-            int size = result.size();
-            for(int j=begin; j<size; j++) {
-                List<Integer> cur = new ArrayList<Integer>(result.get(j));
-                cur.add(nums[i]);
-                result.add(cur);
-            }
-            begin = size;
+        return res;
+    }
+    public static void permutation(int[] nums, boolean[] visited, List<List<Integer>> res, List<Integer> ans) {
+
+        if(ans.size() == nums.length) {
+            res.add(new ArrayList<>(ans));
+            return;
         }
-        return result;
+        for(int i=0; i<nums.length; i++) {
 
+            if(visited[i] == false){
+                if(i>0 && nums[i-1] == nums[i] && !visited[i-1]) continue;
+                ans.add(nums[i]);
+                visited[i] = true;
+
+                permutation(nums, visited, res, ans);
+
+                ans.remove(ans.size()-1);
+                visited[i] = false;
+            }
+        }
     }
 }
 
 // https://leetcode.com/problems/permutations-ii/discuss/2339676/java-oror-easy-and-Recursive-solution-oror-faster-then-98
-// https://leetcode.com/problems/permutations-ii/discuss/2351478/Java-Solution
