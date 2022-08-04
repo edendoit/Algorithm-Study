@@ -2,18 +2,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class No729 {
-    boolean result = true;
-    List<Integer> scale = new ArrayList();
+    class MyCalendar {
 
-//    public MyCalendar() {
-//        scale.add(new ArrayList<>());
-//    }
+        List<int[]> scale;
 
-    public boolean book(int start, int end) {
-        if (result == true) {
+        public MyCalendar() {
+            scale = new ArrayList();
+        }
 
-        } else {
-
+        public boolean book(int start, int end) {
+            for(int[] temp : scale) {
+                if(temp[0] < end && start < temp[1]) {
+                    return false;
+                }
+            }
+            scale.add(new int[] {start, end});
+            return true;
         }
     }
 }
