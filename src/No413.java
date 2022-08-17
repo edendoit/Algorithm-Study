@@ -15,3 +15,5 @@ public class No413 {
         return sum;
     }
 }
+
+// https://leetcode.com/problems/arithmetic-slices/discuss/90058/Simple-Java-solution-9-lines-2ms
