@@ -10,3 +10,5 @@ public class No1332 {
         return 1;
     }
 }
+
+// https://www.youtube.com/watch?v=6CvzjAt9oi0
