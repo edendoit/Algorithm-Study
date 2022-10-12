@@ -23,3 +23,4 @@ public class No841 {
         return visited.size() == rooms.size();
     }
 }
+// https://www.youtube.com/watch?v=oYeGiShGn2k
