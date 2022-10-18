@@ -47,4 +47,15 @@ public class No74 {
 
     }
 
+    public boolean searchMatrix3(int[][] matrix, int target) {
+
+        for(int i=0; i<matrix.length; i++) {
+            for(int j=0; j<matrix[0].length; j++) {
+                if(matrix[i][j] == target)
+                    return true;
+            }
+        }
+        return false;
+    }
+
 }
