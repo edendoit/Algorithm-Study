@@ -9,3 +9,4 @@ public class No1876 {
         return res;
     }
 }
+// https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters/discuss/1429825/Java-simple-O(n)-100
