@@ -12,7 +12,6 @@ public class No200 {
         return count;
     }
 
-
     public void dfs(char[][] grid, int i, int j) {
         if(i<0 || i>=grid.length || j<0 || j>=grid[0].length || grid[i][j] != '1')
             return;
