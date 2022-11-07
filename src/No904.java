@@ -17,3 +17,4 @@ public class No904 {
         return max;
     }
 }
+// https://leetcode.com/problems/fruit-into-baskets/solutions/170764/java-sliding-window-illustration/
