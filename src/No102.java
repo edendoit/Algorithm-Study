@@ -33,3 +33,29 @@ public class No102 {
 }
 // https://www.youtube.com/watch?v=sFDNL6r5aDM
 
+
+//    List<List<Integer>> levels = new ArrayList<List<Integer>>();
+//    public List<List<Integer>> levelOrder(TreeNode root) {
+//        if(root == null) return levels;
+//
+//        getLevel(root, 0);
+//        return levels;
+//
+//    }
+//
+//    public void getLevel(TreeNode root, int level) {
+//        if(levels.size() == level) {
+//            levels.add(new ArrayList<Integer>());
+//
+//        }
+//
+//        levels.get(level).add(root.val);
+//
+//        if(root.left != null) {
+//            getLevel(root.left, level+1);
+//        }
+//        if(root.right != null) {
+//            getLevel(root.right, level+1);
+//        }
+//
+//    }
