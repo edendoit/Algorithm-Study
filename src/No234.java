@@ -1,5 +1,23 @@
 public class No234 {
 //    public boolean isPalindrome(ListNode head) {
+//List<Integer> vals = new ArrayList<>();
+//    ListNode cur = head;
+//        while (cur != null) {
+//        vals.add(cur.val);
+//        cur = cur.next;
+//    }
+//
+//    int start = 0, end = vals.size()-1;
+//        while(start < end) {
+//        if(!vals.get(start).equals(vals.get(end))) {
+//            return false;
+//        }
+//        start ++;
+//        end --;
+//
+//    }
+//        return true;
+
 //        ListNode reverseHead = reverseList(head);
 //
 //        ListNode p1 = head;
