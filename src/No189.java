@@ -24,4 +24,27 @@ public class No189 {
             nums[i]= result[i];
         }
     }
+
+    public static void rotate2(int[] nums, int k) {
+        int[] res = new int[nums.length];
+        for(int i=0; i<nums.length; i++) {
+            res[(i + k) % nums.length] = nums[i];
+            System.out.println((i + k) + " => i, k");
+
+            System.out.println(res[(i + k) % nums.length] + " => res[(i + k) % nums.length]");
+            System.out.println(nums[i] + " => nums[i]");
+            System.out.println( "=============================");
+        }
+
+        for(int i=0; i<nums.length; i++) {
+            nums[i] = res[i];
+        }
+
+    }
+
+    public static void main(String[] args) {
+        rotate2(new int[]{1, 2, 3, 4, 5, 6, 7}, 3);
+    }
+
+    // https://leetcode.com/problems/rotate-array/solutions/127713/official-solution/
 }
