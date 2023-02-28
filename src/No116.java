@@ -1,5 +1,5 @@
 public class No116 {
-    //public Node connect(Node root) {
+    // public Node connect(Node root) {
     //    if(root == null)
     //        return root;
 
