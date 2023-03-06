@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class No46 {
@@ -28,4 +29,25 @@ public class No46 {
         array[i] = array[j];
         array[j] = temp;
     }
+
+    public List<List<Integer>> permute2(int[] nums) {
+        List<List<Integer>> list = new ArrayList<>();
+        Arrays.sort(nums);
+        backtrack(list, new ArrayList<>(), nums, 0);
+        return list;
+
+
+    }
+
+    public void backtrack(List<List<Integer>> list, List<Integer> temp, int[] nums, int start) {
+        list.add(new ArrayList<>(temp));
+        for(int i=start; i<nums.length; i++) {
+            temp.add(nums[i]);
+            backtrack(list, temp, nums, i+1);
+            temp.remove(temp.size()-1);
+        }
+
+    }
+    // https://leetcode.com/problems/permutations/solutions/18239/a-general-approach-to-backtracking-questions-in-java-subsets-permutations-combination-sum-palindrome-partioning/?orderBy=most_votes
+
 }
