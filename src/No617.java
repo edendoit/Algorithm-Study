@@ -22,4 +22,34 @@ public class No617 {
 //        res.right = mergeTrees(root1.right, root2.right);
 //            return res;
 //    }
+
+//    // BFS
+// https://leetcode.com/problems/merge-two-binary-trees/solutions/104331/java-one-recursive-solution-and-two-iterative-solutions-dfs-and-bfs-with-explanations/
+//        if(root1 == null) return root2;
+//
+//    Queue<TreeNode []> queue = new LinkedList<>();
+//        queue.offer(new TreeNode[] {root1, root2});
+//        while(!queue.isEmpty()) {
+//        TreeNode[] cur = queue.poll();
+//        if(cur[1] == null) {
+//            continue;
+//        }
+//
+//        cur[0].val += cur[1].val;
+//        if(cur[0].left == null) {
+//            cur[0].left = cur[1].left;
+//        }  else {
+//            queue.offer(new TreeNode[] {cur[0].left, cur[1].left});
+//        }
+//
+//        if(cur[0].right == null) {
+//            cur[0].right = cur[1].right;
+//        } else {
+//            queue.offer(new TreeNode[] {cur[0].right, cur[1].right});
+//        }
+//    }
+//        return root1;
+//
+//}
+
 }
