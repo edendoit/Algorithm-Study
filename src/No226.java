@@ -1,3 +1,7 @@
+import javax.swing.tree.TreeNode;
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class No226 {
 //    public TreeNode invertTree(TreeNode root) {
 //
@@ -13,4 +17,23 @@ public class No226 {
 //
 //        return root;
 //    }
+
+    // BFS
+//     if(root == null) return null;
+//
+//    Queue<TreeNode> queue = new LinkedList<>();
+//        queue.offer(root);
+//
+//        while(!queue.isEmpty()) {
+//        TreeNode cur = queue.poll();
+//        TreeNode temp = cur.left;
+//        cur.left = cur.right;
+//        cur.right = temp;
+//
+//        if(cur.left != null) queue.add(cur.left);
+//        if(cur.right != null) queue.add(cur.right);
+//
+//    }
+//        return root;
 }
+// https://leetcode.com/problems/invert-binary-tree/editorial/
