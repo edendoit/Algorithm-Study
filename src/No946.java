@@ -18,3 +18,4 @@ public class No946 {
         return j==N;
     }
 }
+// https://leetcode.com/problems/validate-stack-sequences/editorial/
