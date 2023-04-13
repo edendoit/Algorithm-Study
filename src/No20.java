@@ -23,6 +23,21 @@ public class No20 {
             return stack.isEmpty();
         }
 
+    public boolean isValid2(String s) {
+        Stack<Character> stack = new Stack<Character>();
+        for(char c: s.toCharArray()) {
+            if(c=='(')
+                stack.push(')');
+            else if(c=='{')
+                stack.push('}');
+            else if(c=='[')
+                stack.push(']');
+            else if(stack.isEmpty() || stack.pop() != c)
+                return false;
+        }
+        return stack.isEmpty();
+    }
+ //  https://leetcode.com/problems/valid-parentheses/solutions/9178/short-java-solution/
 
     }
 
