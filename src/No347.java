@@ -26,11 +26,14 @@ public class No347 {
         for(Integer key : keys) {
             arr.add(key);
         }
+        Integer[] fake =arr.toArray(new Integer[0]);
+
 
         int[] res = new int[k];
         for(int i=0; i<k; i++) {
-
-            res[i] = arr.indexOf(arr.size()-i);
+            int a  = arr.size()-i-1;
+            // res[i] = arr.indexOf(arr.size()-i-1);
+            res[i] = fake[fake.length-i-1];
         }
 
 
