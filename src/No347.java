@@ -31,8 +31,6 @@ public class No347 {
 
         int[] res = new int[k];
         for(int i=0; i<k; i++) {
-            int a  = arr.size()-i-1;
-            // res[i] = arr.indexOf(arr.size()-i-1);
             res[i] = fake[fake.length-i-1];
         }
 
