@@ -30,3 +30,4 @@ public class No1474 {
         return head;
     }
 }
+// https://leetcode.com/problems/delete-n-nodes-after-m-nodes-of-a-linked-list/solutions/687977/java-easy-and-concise/
