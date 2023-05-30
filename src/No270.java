@@ -2,9 +2,12 @@ public class No270 {
     public int closestValue(TreeNode root, double target) {
         int rnd = root.val;
         while(root != null) {
-            if(Math.abs(target - root.val) <= Math.abs(target - rnd)) {
+            if(Math.abs(target - root.val) < Math.abs(target - rnd)) {
                 rnd = root.val;
 
+            }
+            if(Math.abs(target - root.val) == Math.abs(target - rnd)) {
+                rnd = Math.min(root.val, rnd);
             }
             root = root.val > target ? root.left : root.right;
         }
