@@ -1,19 +1,19 @@
 public class No604 {
     class StringIterator {
-        String compressedString;
+        String s;
         Character cur= ' ';
         int index=0, cnt=0;
         public StringIterator(String compressedString) {
-            this.compressedString = compressedString;
+            this.s = compressedString;
 
         }
 
         public char next() {
             if(cnt == 0) {
-                if(index>=compressedString.length()) return ' ';
-                cur = compressedString.charAt(index++);
-                while(index < compressedString.length() && compressedString.charAt(index) >= '0' && compressedString.charAt(index)<='9') {
-                    cnt = 10 * cnt+(compressedString.charAt(index)-'0');
+                if(index>=s.length()) return ' ';
+                cur = s.charAt(index++);
+                while(index < s.length() && s.charAt(index) >= '0' && s.charAt(index)<='9') {
+                    cnt = 10 * cnt+(s.charAt(index)-'0');
                     index++;
                 }
             }
@@ -22,7 +22,7 @@ public class No604 {
         }
 
         public boolean hasNext() {
-            return index < compressedString.length() || cnt != 0;
+            return index < s.length() || cnt != 0;
         }
     }
 }
