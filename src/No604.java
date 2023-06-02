@@ -1,13 +1,11 @@
 public class No604 {
     class StringIterator {
         String compressedString;
-        Character cur;
-        int index, cnt;
+        Character cur= ' ';
+        int index=0, cnt=0;
         public StringIterator(String compressedString) {
             this.compressedString = compressedString;
-            this.cur = null;
-            this.index = 0;
-            this.cnt = 0;
+
         }
 
         public char next() {
