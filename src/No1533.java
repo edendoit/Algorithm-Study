@@ -8,7 +8,9 @@
              }
 
              // Returns the length of the array
-             public default int length() {}
+             public default int length() {
+                 return 0;
+             }
   }
 public class No1533 {
     public int getIndex(ArrayReader reader) {
