@@ -24,3 +24,4 @@ public class No247 {
         return res;
     }
 }
+// https://www.geeksforgeeks.org/strobogrammatic-number/
