@@ -2,7 +2,7 @@ public class PM2DimensionalArray {
     static int y, x;
     public int[][] solution(int[][] arr1, int[][] arr2) {
         y=arr1.length; // 행
-        x=arr2[0].length; // 렬
+        x=arr2[0].length; // 열
         int[][] answer = new int[y][x];
         for(int i=0; i<y; i++) {
             for(int j=0; j<x; j++) {
