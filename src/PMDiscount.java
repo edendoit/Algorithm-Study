@@ -52,5 +52,9 @@ class PMDiscount {
         String[] discnt = {"chicken", "apple", "apple", "banana", "rice", "apple", "pork", "banana", "pork", "rice", "pot", "banana", "apple", "banana"};
 
         solution(want, number, discnt);
+
+        int[][] arr = {{1, 4}, {3, 2}, {4, 1}};
+        System.out.println(arr.length+"   |   "+arr[0].length);
+
     }
 }
