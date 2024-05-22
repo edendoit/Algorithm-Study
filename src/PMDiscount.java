@@ -53,8 +53,6 @@ class PMDiscount {
 
         solution(want, number, discnt);
 
-        int[][] arr = {{1, 4}, {3, 2}, {4, 1}};
-        System.out.println(arr.length+"   |   "+arr[0].length);
 
     }
 }
